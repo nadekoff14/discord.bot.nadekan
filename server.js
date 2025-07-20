@@ -46,7 +46,7 @@ client.on("ready", (message) => {
   client.user.setActivity({ 
     name: "railway仕様", 
     type: ActivityType.Custom });
-
+});
     
 //ping表示
 client.on("message", (message) => {
