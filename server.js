@@ -46,7 +46,7 @@ client.on("ready", (message) => {
         client.user.setActivity({ 
             name: 'BOTテスト',
             type: ActivityType.Competing
-        });
+        );
 
     
 //ping表示
