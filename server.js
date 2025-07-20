@@ -42,7 +42,7 @@ http
 //BOTステータス
 client.on("ready", (message) => {
   console.log("Bot準備完了～");
-  client.user.setActivity("人類を選別", { type: 'COMPETING' });
+  client.user.setActivity("人類を選別");
     });
 
 
