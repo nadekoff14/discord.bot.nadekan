@@ -43,10 +43,11 @@ http
 client.on("ready", (message) => {
   console.log("Bot準備完了～");
   
-  client.user.setActivity({ 
-    name: "railway仕様", 
-    type: ActivityType.Custom });
-});
+        client.user.setActivity({ 
+            name: 'BOTテスト',
+            type: ActivityType.Competing
+        });
+
     
 //ping表示
 client.on("message", (message) => {
