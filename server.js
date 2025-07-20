@@ -42,12 +42,12 @@ http
 //BOTステータス
 client.on("ready", (message) => {
   console.log("Bot準備完了～");
+});
   
-        client.user.setActivity({ 
+client.user.setActivity({ 
             name: 'BOTテスト',
             type: ActivityType.Competing
         });
-);
     
 //ping表示
 client.on("message", (message) => {
