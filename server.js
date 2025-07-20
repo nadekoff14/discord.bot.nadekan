@@ -1,4 +1,4 @@
-//
+//ストップ中
 
 
 
@@ -42,12 +42,9 @@ http
 //BOTステータス
 client.on("ready", (message) => {
   console.log("Bot準備完了～");
-});
-  
-client.user.setActivity({ 
-            name: 'BOTテスト',
-            type: ActivityType.Competing
-        });
+  client.user.setActivity("人類を選別", { type: 'PLAYING' });
+    });
+
     
 //ping表示
 client.on("message", (message) => {
