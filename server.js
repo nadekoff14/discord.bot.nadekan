@@ -42,9 +42,9 @@ http
 //BOTステータス
 client.on("ready", (message) => {
   console.log("Bot準備完了～");
-  client.user.setActivity({ 
+        client.user.setActivity({ 
             name: 'BOTテスト',
-            type: ActivityType.Custom
+            type: ActivityType.Listening
         });
     });
 
