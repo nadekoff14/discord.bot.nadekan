@@ -40,10 +40,9 @@ http
   .listen(3000);
 
 //BOTステータス
-client.on("ready", (message) => {
-  console.log("Bot準備完了～");
+client.on("ready", () => {
   client.user.setActivity({ name: "げ〜む", type: ActivityType.Custom });
-    });
+});
 
 
     
