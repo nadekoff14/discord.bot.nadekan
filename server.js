@@ -1050,59 +1050,7 @@ const moritomogacha = moritomo[randomIndex];
   }
 
   
-  //おみくじ
 
-  if (message.author.id == client.user.id || message.author.bot) {
-    return;
-  }
-  if (
-    message.content.match(/^！どらふとおみくじ/) ||
-    (message.isMemberMentioned(client.user) &&
-      message.content.match(/おみくじ/))
-  ) {
-    let arr = [
-      "33-4",
-      "7-0（大吉）",
-      "6-3（吉）",
-      "2-3（凶）",
-      "3-3（人権で賞）",
-      "1-3（もっとがんばりま賞）",
-      "0-3（敗北者・・・！）",
-    ];
-    let weight = [2, 5, 10, 30, 15, 30, 10];
-
-    lotteryByWeight(message.channel.id, arr, weight);
-  } else if (message.isMemberMentioned(client.user)) {
-    sendReply(message, "呼びましたか？");
-  }
-
-  //こんてんつルーレット
-  if (message.author.id == client.user.id || message.author.bot) {
-    return;
-  }
-
-  if (
-    message.content.match(/^！こんてんつるーれっと/) ||
-    (message.isMemberMentioned(client.user) &&
-      message.content.match(/おみくじ/))
-  ) {
-    let arr = [
-      "天然要害 サスタシャ浸食洞からやり直してきな",
-      "万魔殿パンデモニウム零式：辺獄編4　とかどう？",
-      "極ゾディアーク討滅戦　とかどう？",
-      "極ハイデリン討滅戦　ですね",
-      "終極の戦い　行きましょう！",
-      "絶バハムート討滅戦　！",
-      "絶アルテマウェポン破壊作戦 行きだ！",
-      "絶竜詩戦争 !!",
-      "クリスタルコンフリクト！！！！！！！！！！",
-    ];
-    let weight = [2, 1, 1, 1, 1, 1, 1, 1, 3];
-
-    lotteryByWeight(message.channel.id, arr, weight);
-  } else if (message.isMemberMentioned(client.user)) {
-    sendReply(message, "呼びましたか？");
-  };
       
     });
   
